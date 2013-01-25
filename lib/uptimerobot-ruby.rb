@@ -1,7 +1,6 @@
+require "httparty"
 require "uptimerobot-ruby/version"
 
-module Uptimerobot
-  module Ruby
-    # Your code goes here...
-  end
-end
+require "uptimerobot-ruby/client"
+require "uptimerobot-ruby/error"
+require "uptimerobot-ruby/monitor"
