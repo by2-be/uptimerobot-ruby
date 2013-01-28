@@ -1,24 +1,26 @@
 # Uptimerobot::Ruby
 
-TODO: Write a gem description
+A ruby wrapper for Uptime Robot
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'uptimerobot-ruby'
+    gem 'uptimerobot-ruby', :git => git@github.com:by2-be/uptimerobot-ruby.git
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install uptimerobot-ruby
-
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+UptimeRobot::Client.api_key = "YOUR_API_KEY"
+m = UptimeRobot::Monitor.create(
+  :name => "test",
+  :url => "www.test.com"
+)
+```
 
 ## Contributing
 
